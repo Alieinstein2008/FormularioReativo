@@ -1,0 +1,70 @@
+.form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    justify-self: center;
+    color: wheat;
+
+}
+
+.form:hover {
+    transform: scale(1.05);
+    border: 1px solid #fff;
+}
+
+.form div#Title {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #d3d3d3;
+    font-size: 1.35em;
+    text-transform: capitalize;
+}
+
+.form .BoardButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0.55em;
+}
+
+.form .BoardButton .BotaoEnviar {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+.form .BoardButton .BotaoEnviar:hover {
+    background-color: red;
+    color: white;
+}
+
+.form .BoardButton .BotaoLimpar {
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.form .BoardButton .BotaoLimpar:hover {
+    background-color: black;
+    color: white;
+}
