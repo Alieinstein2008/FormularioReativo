@@ -16,4 +16,12 @@ Ao selecionar Brasil no select de paises e qualquer Estado e Cidade nos seus res
 
 ## Observação
 O carregamento de dados a partir de requisições é realizado se, e somente, caso o país selecionado pelo usuário seja Brasil.
-A API nessa primeira versão não possui dados de outros países, porém o codigo já contempla essa possibilidade, basta alterar os arquivos JSON (estados.json) e (estados-cidades.json), um objetivo para as próximas versões do projeto.
+A API nessa primeira versão não possui dados de outros países, porém o codigo já contempla essa possibilidade, basta alterar os seguintes arquivos JSON do webserver PHP: [Primeiro arquivo](./estados.json) e [Segundo arquivo](estados_cidades.json).
+
+>[!NOTE]
+Enfoca-se as funções JSX presentes no arquivo Formulario.jsx, que serve como componente central e essencial no funcionamento e dinamicidade da aplicação.
+>
+>[Analise o código clicando aqui](formulario-app/src/componentes/Formulario/Formulario.jsx)
+
+>[!NOTE]
+Para o funcionamento integral da aplicação é necessário iniciar um servidor apache local contendo os arquivos do webserver presentes neste repositório, sendo assim as requisições HTTP serão realizadas com sucesso.
