@@ -5,7 +5,15 @@ Nesse projeto foi realizado um formulário simples e sem resposta, onde é poss�
 Para a realização desse projeto foi necessário a criação de um servidor local próprio em PHP que, a partir de uma requisição do tipo GET na url (http://localhost:80/webserver/estados.php) é retornado em formato JSON todos os estados do Brasil, enquanto também é possível realizar requisições a mesma url passando a sigla de um Estado existente no país selecionado sendo então retornado todas as cidades desse estado também no formato JSON.
 
 ## Screenshot da interface sem preenchimento 
-Em breve...
+A  interface se apresenta da seguinte maneira quando é carregada
+
+![Screenshot interface inicial sem preenchimento](formulario-app/Previews/FormReact2.jpg)
 
 ## Screenshot da interface preenchida
-Em breve..
+Ao selecionar Brasil no select de paises e qualquer Estado e Cidade nos seus respectivos select
+
+![Screenshot interface inicial sem preenchimento](formulario-app/Previews/FormReact2.jpg)
+
+## Observação
+O carregamento de dados a partir de requisições é realizado se, e somente, caso o país selecionado pelo usuário seja Brasil.
+A API nessa primeira versão não possui dados de outros países, porém o codigo já contempla essa possibilidade, basta alterar os arquivos JSON (estados.json) e (estados-cidades.json), um objetivo para as próximas versões do projeto.
