@@ -16,7 +16,7 @@
 
 .form:hover {
     transform: scale(1.05);
-    border: 1px solid #fff;
+    border: 1px solid #ffff;
 }
 
 .form div#Title {
