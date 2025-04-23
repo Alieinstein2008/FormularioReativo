@@ -1,5 +1,5 @@
 .form {
-    height: 300px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -22,10 +22,12 @@
 .form div#Title {
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
     color: #d3d3d3;
-    font-size: 1.35em;
+    font-size: 1.5em;
     text-transform: capitalize;
+    font-weight: 600;
+    cursor: none;
 }
 
 .form .BoardButton {
@@ -46,9 +48,11 @@
     transition: .4s ease-in-out;
     background-color: #252525;
     color: white;
+    cursor: pointer;
 }
+
 .form .BoardButton .BotaoEnviar:hover {
-    background-color: red;
+    background-color: green;
     color: white;
 }
 
@@ -62,9 +66,10 @@
     transition: .4s ease-in-out;
     background-color: #252525;
     color: white;
+    cursor: pointer;
 }
 
 .form .BoardButton .BotaoLimpar:hover {
-    background-color: black;
+    background-color: red;
     color: white;
 }
