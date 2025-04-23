@@ -15,4 +15,5 @@ select {
     color: #d3d3d3;
     background-color: #171717;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    cursor: pointer;
 }
