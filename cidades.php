@@ -1,21 +1,25 @@
 <?php
-	header('Access-Control-Allow-Origin: *');
-	header('Content-type: application/json');
-	
-	if (isset($_GET['sigla'])){
-		$sigla = $_GET['sigla'];
+header('Access-Control-Allow-Origin: *');
+header('Content-type: application/json');
 
-		$txtEstados = file_get_contents('./estados_cidades.json');
-		$estados = json_decode($txtEstados)->estados;
+if (isset($_GET['nome_estado'])) {
+	$EstadoNome = $_GET['nome_estado'];
+	$txtInformacoes = file_get_contents('./paises_estados_cidades.json');
+	$Informacoes = json_decode($txtInformacoes);
+	$ListaCidades = [];
+	foreach ($Informacoes as $key => $element) {
+		for ($indice = 0; $indice < count($element->estados); $indice++) {
+			if ($element->estados[$indice]->nome === $EstadoNome) {
+				for ($index = 0; $index < count($element->estados[$indice]->cidades); $index++) {
+					$Cidade = $element->estados[$indice]->cidades[$index];
+					array_push($ListaCidades, $Cidade);
+				}
 
-		foreach ($estados as $estado) {
-			if ($estado->sigla === $sigla){
-				echo json_encode($estado->cidades);
 			}
 		}
-	} else { 
-		echo '[]';
-    }
-    
-    //sleep(2);
+	}
+	echo json_encode($ListaCidades);
+} else {
+	echo '[]';
+}
 ?>
